@@ -1,25 +1,23 @@
 {
-  "name": "dserver",
+  "name": "deserv",
   "version": "0.0.1",
-  "description": "develop server for static webpage",
-  "bin": {
-    "dserver": "./bin/cmd.js"
-  },
+  "description": "dev server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/devWayne/dserver.git"
+    "url": "git+https://github.com/devWayne/deserv.git"
   },
   "author": "VI",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devWayne/dserver/issues"
+    "url": "https://github.com/devWayne/dev/issues"
   },
-  "homepage": "https://github.com/devWayne/dserver#readme",
+  "homepage": "https://github.com/devWayne/deserv#readme",
   "dependencies": {
-    "minimist": "^1.1.1"
+    "koa": "^0.21.0",
+    "koa-serve-static": "0.0.1"
   }
 }
