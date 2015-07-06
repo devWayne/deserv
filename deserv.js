@@ -15,6 +15,12 @@ deserv.use(function (req, res, next) {
   next();
 });
 
+deserv.use(require('connect-livereload')({
+    port: 35729,
+    ignore: ['.svg']
+}));
+
+
 deserv.use(connectRoute(function (router) {
     router.get('/mock/json/:id', function (req, res, next) {
 	 var val = mock(req.params.id);

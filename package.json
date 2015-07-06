@@ -1,6 +1,6 @@
 {
   "name": "deserv",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "dev server",
   "main": "index.js",
   "bin": "bin/cmd",
@@ -19,6 +19,8 @@
   "homepage": "https://github.com/devWayne/deserv#readme",
   "dependencies": {
     "connect": "3.1.1",
+    "connect-livereload": "^0.5.3",
+    "livereload": "^0.3.7",
     "minimist": "~0.1.0",
     "query-string": "^2.3.0",
     "serve-index": "1.2.0",

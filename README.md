@@ -14,7 +14,7 @@ $ sudo npm i -g deserv
 
 #### step 1
 
-wirte `mock.json` in your app folder   
+config `mock.json` in your develop folder   
 
 ```json
 {
@@ -37,7 +37,7 @@ wirte `mock.json` in your app folder
 run Deserv
 
 ```shell
-$ deserv
+$ cd yourfolder && deserv
 
 ```
 
@@ -52,16 +52,18 @@ $.ajax({
 	data:{},
 }).done(function(res){
 	//your code here
-	//res.code == 200
-	//res.msg == {
+	/*  
+	  res.code == 200
+	  res.msg == {
             "name":"vi",
             "age":"23"
         }
+	*/
 });
 
 ```
 
-## API
+
 
 
 

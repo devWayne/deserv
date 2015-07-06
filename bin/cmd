@@ -8,7 +8,8 @@ var argv = require("minimist")(process.argv.slice(2), {
     'silent': 's',
     'port': 'p',
     'hostname': 'h',
-    'dir': 'd'
+    'dir': 'd',
+    'reload':'r'
   },
   string: ['port', 'hostname'],
   boolean: 'silent',
@@ -24,6 +25,13 @@ var utils = require('../lib/utils');
 var port = argv._[0] || argv.port;
 var hostname = argv.hostname || utils.getIPAddress();
 
+if (!argv.reload) {
+var livereload = require('livereload');
+  server = livereload.createServer();
+  server.watch(__dirname);
+}
+
+
 var dserver = require('../deserv');
 
 dserver.listen(port, function () {
@@ -35,3 +43,5 @@ dserver.listen(port, function () {
     utils.openURL(url);
   }
 });
+
+
