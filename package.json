@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "dev server",
   "main": "index.js",
+  "bin": "bin/cmd",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,11 +14,14 @@
   "author": "VI",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/devWayne/dev/issues"
+    "url": "https://github.com/devWayne/deserv/issues"
   },
   "homepage": "https://github.com/devWayne/deserv#readme",
   "dependencies": {
-    "koa": "^0.21.0",
-    "koa-serve-static": "0.0.1"
+    "connect": "3.1.1",
+    "minimist": "~0.1.0",
+    "query-string": "^2.3.0",
+    "serve-index": "1.2.0",
+    "serve-static": "1.5.3"
   }
 }
